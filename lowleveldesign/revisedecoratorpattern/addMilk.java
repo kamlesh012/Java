@@ -14,4 +14,7 @@ public class addMilk extends Iadditives{
         System.out.println("Stir!");
     }
     
+    public int cost(){
+        return 5+ibeverage.cost();
+    }
 }

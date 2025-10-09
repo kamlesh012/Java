@@ -12,4 +12,8 @@ public class addIce extends Iadditives{
         ibeverage.prepare();
         System.out.println("Add Ice!");
     }
+
+    public int cost(){
+        return 7+ibeverage.cost();
+    }
 }

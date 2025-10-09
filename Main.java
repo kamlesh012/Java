@@ -18,14 +18,16 @@ public class Main {
     public static void main(String [] args){
 
         //Revised Decorator Pattern (Simplified Example)
-        
+
         Ibeverage hotChocolateSweetCoffee=new addChocolate(new addMilk(new addSugar(new coffee())));
         hotChocolateSweetCoffee.prepare();
         System.out.println("----Coffee is Ready!----");
+        System.out.println("Cost of Coffee is : "+hotChocolateSweetCoffee.cost());
 
         Ibeverage normalTea=new addSugar(new addSugar(new addMilk(new tea())));
         normalTea.prepare();
         System.out.println("----Tea is Ready!----");
+        System.out.println("Cost of Tea is : "+normalTea.cost());
 
 
         // Singleton Design Pattern;

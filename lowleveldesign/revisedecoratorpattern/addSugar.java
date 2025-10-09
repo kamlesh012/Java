@@ -14,5 +14,8 @@ public class addSugar extends Iadditives{
         System.out.println("Stir Properly!");
     }
     
+    public int cost(){
+        return 3 + ibeverage.cost();
+    }
     
 }

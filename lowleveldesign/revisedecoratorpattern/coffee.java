@@ -1,6 +1,11 @@
 package revisedecoratorpattern;
 
 public class coffee extends Ibeverage{
+
+    public int cost(){
+        return 20;
+    }
+
     @Override
     public void prepare(){
         System.out.println("Bring a Cup");

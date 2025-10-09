@@ -13,4 +13,8 @@ public class addChocolate extends Iadditives{
         System.out.println("Add Chocolate!");
         System.out.println("Stir!");
     }
+    
+    public int cost(){
+        return 10+ibeverage.cost();
+    }
 }
